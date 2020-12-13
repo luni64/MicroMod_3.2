@@ -1,6 +1,8 @@
 # MicroMod_3.2
 Experimental mk20dx256vlh7 board compatible to the Sparkfun MicroMod system. This is just a quick shot to see if it is possible to hand solder the tiny board. 
 
+Pictures and schematic in the Production folder
+
 Used a T3.2 as base for the board, but did not yet bring all possible signals out to the connector. 
 
 **Features:**
