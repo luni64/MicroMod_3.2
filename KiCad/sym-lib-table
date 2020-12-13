@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name TeensyMM-rescue)(type Legacy)(uri ${KIPRJMOD}/TeensyMM-rescue.lib)(options "")(descr ""))
+  (lib (name SparkFun-MicroMod)(type Legacy)(uri ${KICAD_USER_LIBRARY}/symbols/Sparkfun/SparkFun-MicroMod.lib)(options "")(descr ""))
+)

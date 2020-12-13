@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name SYSNAME)(type KiCad)(uri ${KIPRJMOD}/micromod_template.pretty)(options "")(descr ""))
+  (lib (name NXP)(type KiCad)(uri ${KICAD_USER_LIBRARY}/footprints/NXP)(options "")(descr ""))
+  (lib (name Sparkfun)(type KiCad)(uri "C:/Users/lutz/Google Drive/10 lunOptics/50 Projekte/KiCadLib/footprints/Sparkfun.pretty")(options "")(descr ""))
+)
