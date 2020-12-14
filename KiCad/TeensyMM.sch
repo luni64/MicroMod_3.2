@@ -447,8 +447,8 @@ Text GLabel 11450 4300 1    50   Input ~ 0
 SWD_CLK
 Text GLabel 11600 4300 1    50   Input ~ 0
 SWD_DIO
-Text Notes 13100 4200 2    39   ~ 0
-Close JP1 \nfor JTAG use\n(deactivates MKL02)
+Text Notes 12700 4150 0    39   ~ 0
+Deactivates \nMKL02
 $Comp
 L power:GND #PWR013
 U 1 1 60216F3C
@@ -459,17 +459,6 @@ F 2 "" H 12800 4300 50  0001 C CNN
 F 3 "" H 12800 4300 50  0001 C CNN
 	1    12800 4300
 	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 60214C71
-P 13000 4300
-F 0 "JP1" H 13000 4200 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 12450 4900 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 4300 50  0001 C CNN
-F 3 "~" H 13000 4300 50  0001 C CNN
-	1    13000 4300
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	11750 4300 11750 4500
@@ -827,12 +816,6 @@ Text Label 10300 4800 0    50   ~ 0
 PTB1
 Text Label 10300 4900 0    50   ~ 0
 PTA7
-Wire Wire Line
-	13200 4300 13150 4300
-Wire Wire Line
-	12850 4300 12800 4300
-Text Label 13100 4300 0    50   ~ 0
-EN
 Text Label 10300 4700 0    50   ~ 0
 PTA6
 $Comp
@@ -878,8 +861,6 @@ NoConn ~ 4350 3200
 NoConn ~ 4350 3300
 NoConn ~ 4350 3400
 NoConn ~ 4350 3500
-NoConn ~ 4350 3900
-NoConn ~ 4350 4000
 NoConn ~ 4350 5500
 NoConn ~ 7950 3600
 NoConn ~ 7950 4100
@@ -898,8 +879,40 @@ NoConn ~ 10250 2900
 NoConn ~ 10250 1800
 NoConn ~ 13200 4200
 NoConn ~ 13200 4400
-NoConn ~ 13200 4500
 NoConn ~ 13200 4700
 NoConn ~ 13200 5350
 NoConn ~ 13200 5450
+Text Label 2100 3200 0    50   ~ 0
+D3_CTX
+Text Label 2100 3300 0    50   ~ 0
+D4_CRX
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5FD8AAE7
+P 13000 4300
+F 0 "JP1" V 13100 4100 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 12350 3700 50  0001 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 13000 4300 50  0001 C CNN
+F 3 "~" H 13000 4300 50  0001 C CNN
+	1    13000 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13000 4500 13200 4500
+Wire Wire Line
+	12800 4300 12850 4300
+Wire Wire Line
+	13000 4100 13100 4100
+Wire Wire Line
+	13100 4100 13100 4300
+Wire Wire Line
+	13100 4300 13200 4300
+Wire Wire Line
+	4350 3900 4950 3900
+Wire Wire Line
+	4350 4000 4950 4000
+Text Label 4400 3900 0    50   ~ 0
+RTS
+Text Label 4400 4000 0    50   ~ 0
+CTS
 $EndSCHEMATC
