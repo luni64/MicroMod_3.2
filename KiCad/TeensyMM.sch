@@ -38,7 +38,7 @@ $EndComp
 Text Notes 3875 5100 1    79   ~ 0
 PTD0 - PTD7
 Wire Wire Line
-	9375 3450 9475 3450
+	9375 3450 9425 3450
 Wire Wire Line
 	9375 1750 9425 1750
 Wire Wire Line
@@ -357,9 +357,6 @@ Wire Wire Line
 	12125 4700 12325 4700
 Text Notes 12775 5850 0    50   ~ 0
 PJRC Bootloader
-Wire Wire Line
-	9375 3050 9375 3150
-Connection ~ 9375 3150
 $Comp
 L power:+3.3V #PWR09
 U 1 1 5FE10C3A
@@ -372,37 +369,15 @@ F 3 "" H 9425 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR010
-U 1 1 5FE1A18E
-P 9375 3200
-F 0 "#PWR010" H 9375 2950 50  0001 C CNN
-F 1 "GND" H 9575 3200 50  0000 R CNN
-F 2 "" H 9375 3200 50  0001 C CNN
-F 3 "" H 9375 3200 50  0001 C CNN
-	1    9375 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR07
 U 1 1 5FEC0EED
 P 9475 3450
 F 0 "#PWR07" H 9475 3200 50  0001 C CNN
-F 1 "GND" V 9480 3322 50  0000 R CNN
+F 1 "GND" V 9575 3350 50  0000 R CNN
 F 2 "" H 9475 3450 50  0001 C CNN
 F 3 "" H 9475 3450 50  0001 C CNN
 	1    9475 3450
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR015
-U 1 1 5FFF94FE
-P 9475 3650
-F 0 "#PWR015" H 9475 3500 50  0001 C CNN
-F 1 "+3.3V" V 9475 3775 50  0000 L CNN
-F 2 "" H 9475 3650 50  0001 C CNN
-F 3 "" H 9475 3650 50  0001 C CNN
-	1    9475 3650
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	9375 2150 9425 2150
@@ -411,14 +386,10 @@ Wire Wire Line
 Wire Wire Line
 	9375 2250 9425 2250
 Wire Wire Line
-	9375 3150 9375 3200
-Wire Wire Line
 	9425 2050 9425 2150
 Connection ~ 9425 2150
 Text Notes 9775 2950 1    39   ~ 0
 Very simplistic analog \nreferencing, but should \nwork somehow. Might \nimprove later if the board \nworks at all.
-Text Notes 9475 4000 0    39   ~ 0
-RTC not yet\nimplemented
 Wire Wire Line
 	12325 3700 12275 3700
 Wire Wire Line
@@ -837,14 +808,9 @@ Text GLabel 2525 4950 0    50   Input ~ 0
 D26_A15-BAT_VIN3
 Wire Wire Line
 	2525 4950 2675 4950
-Wire Wire Line
-	9375 3650 9475 3650
 NoConn ~ 2675 2150
-NoConn ~ 2675 2250
 Text GLabel 7075 3950 0    50   Input ~ 0
 D23
-NoConn ~ 9375 3850
-NoConn ~ 9375 4050
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 60422DB7
@@ -873,4 +839,65 @@ $EndComp
 Connection ~ 12125 2350
 Wire Wire Line
 	12125 2350 12225 2350
+$Comp
+L Device:Crystal_Small Y2
+U 1 1 604324EE
+P 9500 3950
+F 0 "Y2" V 9454 4038 50  0000 L CNN
+F 1 "16MHz" V 9545 4038 50  0000 L CNN
+F 2 "footprints:OSC_XRCHA16M000F0A01R0" H 9500 3950 50  0001 C CNN
+F 3 "~" H 9500 3950 50  0001 C CNN
+	1    9500 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9375 3850 9500 3850
+Wire Wire Line
+	9375 4050 9500 4050
+$Comp
+L Device:D_Schottky_x2_KCom_AAK D2
+U 1 1 6046754E
+P 9975 3650
+F 0 "D2" V 9929 3729 50  0000 L CNN
+F 1 "D_Schottky_x2_KCom_AAK" V 9525 3650 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9975 3650 50  0001 C CNN
+F 3 "~" H 9975 3650 50  0001 C CNN
+	1    9975 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 6046F42E
+P 10075 3350
+F 0 "#PWR0102" H 10075 3200 50  0001 C CNN
+F 1 "+3.3V" V 10000 3225 50  0000 L CNN
+F 2 "" H 10075 3350 50  0001 C CNN
+F 3 "" H 10075 3350 50  0001 C CNN
+	1    10075 3350
+	0    1    1    0   
+$EndComp
+Text GLabel 2575 2250 0    50   Input ~ 0
+RTC3V
+Wire Wire Line
+	2575 2250 2675 2250
+Text GLabel 10075 3950 2    50   Input ~ 0
+RTC3V
+Wire Wire Line
+	9975 3950 10075 3950
+Wire Wire Line
+	9375 3650 9775 3650
+Wire Wire Line
+	9975 3350 10075 3350
+Wire Wire Line
+	9375 3050 9425 3050
+Wire Wire Line
+	9425 3050 9425 3150
+Connection ~ 9425 3450
+Wire Wire Line
+	9425 3450 9475 3450
+Wire Wire Line
+	9375 3150 9425 3150
+Connection ~ 9425 3150
+Wire Wire Line
+	9425 3150 9425 3450
 $EndSCHEMATC
