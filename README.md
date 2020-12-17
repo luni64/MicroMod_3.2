@@ -1,5 +1,5 @@
 
-<img src="/Documentation/V2.0_3d.jpg" alt="3d top" height="400" > <img src="/Documentation/V2.0_3d_bottom.jpg" alt="3d bottom" height="400" >
+<img src="/Documentation/V2.0_3d.jpg" alt="3d top" height="300" > <img src="/Documentation/V2.0_3d_bottom.jpg" alt="3d bottom" height="300" >
 
 # MicroMod_3.2
 Experimental mk20dx256vlh7 board compatible to the Sparkfun MicroMod system. This is just a quick shot to see if it is possible to hand solder the tiny board. Used a T3.2 as base of the development.
