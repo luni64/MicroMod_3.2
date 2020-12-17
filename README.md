@@ -18,3 +18,5 @@ Pictures, schematic and pinout in the documentation folder. Gerbers, BOM etc in 
 - 
 
 [schematic](/Documentation/Schematic.pdf)
+
+**BOM: https://octopart.com/bom-tool/5AbwHvxe**
