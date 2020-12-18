@@ -54,12 +54,10 @@ USB-D+
 Text GLabel 9625 5550 2    50   Input ~ 0
 USB-D-
 Wire Wire Line
-	2675 2550 2575 2550
-Wire Wire Line
-	2675 2650 2575 2650
-Text GLabel 2575 2550 0    50   Input ~ 0
+	2675 2650 2550 2650
+Text GLabel 2150 2550 0    50   Input ~ 0
 USB-D-
-Text GLabel 2575 2650 0    50   Input ~ 0
+Text GLabel 2150 2650 0    50   Input ~ 0
 USB-D+
 Wire Wire Line
 	9375 5250 9775 5250
@@ -900,4 +898,32 @@ Wire Wire Line
 Connection ~ 9425 3150
 Wire Wire Line
 	9425 3150 9425 3450
+$Comp
+L Device:R R4
+U 1 1 5FDC12E7
+P 2400 2550
+F 0 "R4" V 2300 2500 50  0000 L CNN
+F 1 "33R" V 2400 2500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2330 2550 50  0001 C CNN
+F 3 "~" H 2400 2550 50  0001 C CNN
+	1    2400 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 2550 2675 2550
+Wire Wire Line
+	2250 2550 2150 2550
+Wire Wire Line
+	2250 2650 2150 2650
+$Comp
+L Device:R R5
+U 1 1 5FDC1DFC
+P 2400 2650
+F 0 "R5" V 2500 2600 50  0000 L CNN
+F 1 "33R" V 2400 2600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2330 2650 50  0001 C CNN
+F 3 "~" H 2400 2650 50  0001 C CNN
+	1    2400 2650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
