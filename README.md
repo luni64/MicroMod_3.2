@@ -2,7 +2,9 @@
 <img src="/Documentation/V2.0_3d.jpg" alt="3d top" height="300" > <img src="/Documentation/V2.0_3d_bottom.jpg" alt="3d bottom" height="300" >
 
 # MicroMod_3.2
-Experimental mk20dx256vlh7 board compatible to the Sparkfun MicroMod system. This is just a quick shot to see if it is possible to hand solder the tiny board. Used a T3.2 as base of the development.
+Experimental mk20dx256vlh7 board compatible to the Sparkfun MicroMod carrriers. The board should be able to run firmware written for a Teensy 3.2 using the TeensyDuino core libraries. 
+
+This board is just a quick shot to see if it is possible to hand solder the tiny components. 
 
 Pictures, schematic and pinout in the documentation folder. Gerbers, BOM etc in the production folder
 
