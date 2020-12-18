@@ -1,0 +1,28 @@
+{
+  "version": "1",
+  "target": "vsCode",
+  "buildSystem": "makefile",
+  "debugSupport": "none",
+  "configurations": [
+    {
+      "name": "default",
+      "guid": "781e0709-4b8c-4af4-8998-7e49c8252e3f",
+      "setupType": "quick",
+      "coreBase": "C:\\Program Files\\Arduino\\arduino-1.8.12\\hardware\\teensy\\avr",
+      "compilerBase": "C:\\Program Files\\Arduino\\arduino-1.8.12\\hardware\\tools\\arm",
+      "makefileExtension": null,
+      "copyCore": false,
+      "sharedLibraries": [],
+      "projectLibraries": [],
+      "board": {
+        "name": "Teensy 3.2 / 3.1",
+        "options": {
+          "USB Type": "Serial",
+          "CPU Speed": "96 MHz (overclock)",
+          "Optimize": "Faster",
+          "Keyboard Layout": "US English"
+        }
+      }
+    }
+  ]
+}
