@@ -1,25 +1,22 @@
 #include "Arduino.h"
 #include "mm.h"
-using namespace MM32;
+//using namespace MM32;
+
+MM32::BUS bus;
 
 void setup()
 {
-  pinMode(G2,OUTPUT);
-  Bus.pinMode(OUTPUT);
+    pinMode(bus, OUTPUT);
+    bus = 0xA2;
 
-  for (int i = 0; i < 0xFF; i++)
-  {
-      Bus = i;
-  }
-
-  Bus.pinMode(INPUT_PULLUP);
+    pinMode(bus, INPUT);
 }
 
 void loop()
 {
-  digitalWriteFast(LED_BUILTIN,!digitalReadFast(LED_BUILTIN));
-  delay(150);
+    uint8_t value = bus;
+    Serial.println(value);
 
-  uint8_t value = Bus;
-  Serial.println(value);
+    digitalWriteFast(LED_BUILTIN, !digitalReadFast(LED_BUILTIN));
+    delay(150);
 }

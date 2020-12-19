@@ -1,5 +1,5 @@
 (fp_lib_table
   (lib (name NXP)(type KiCad)(uri ${KICAD_USER_LIBRARY}/footprints/NXP)(options "")(descr ""))
-  (lib (name Sparkfun)(type KiCad)(uri "C:/Users/lutz/Google Drive/10 lunOptics/50 Projekte/KiCadLib/footprints/Sparkfun.pretty")(options "")(descr ""))
-  (lib (name footprints)(type KiCad)(uri "C:/Users/lutz/Google Drive/10 lunOptics/50 Projekte/KiCadLib/footprints/crystals")(options "")(descr ""))
+  (lib (name Sparkfun)(type KiCad)(uri ${KICAD_USER_LIBRARY}/footprints/Sparkfun.pretty)(options "")(descr ""))
+  (lib (name Project)(type KiCad)(uri ${KIPRJMOD})(options "")(descr ""))
 )

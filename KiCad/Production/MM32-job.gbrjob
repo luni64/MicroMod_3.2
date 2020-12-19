@@ -7,14 +7,14 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.8)-1"
     },
-    "CreationDate":  "2020-12-18T16:25:40+01:00"
+    "CreationDate":  "2020-12-19T10:03:23+01:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "TeensyMM",
-      "GUID": "5465656e-7379-44d4-9d2e-6b696361645f",
+      "Name": "MM32",
+      "GUID": "4d4d3332-2e6b-4696-9361-645f70636258",
       "Revision": "rev?"
     },
     "Size":
@@ -49,47 +49,47 @@
   "FilesAttributes":
   [
     {
-      "Path":  "TeensyMM-Top.gtl",
+      "Path":  "MM32-Top.gtl",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "TeensyMM-In1_Cu.g2",
+      "Path":  "MM32-In1_Cu.g2",
       "FileFunction":  "Copper,L2,Inr",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "TeensyMM-In2_Cu.g3",
+      "Path":  "MM32-In2_Cu.g3",
       "FileFunction":  "Copper,L3,Inr",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "TeensyMM-Bottom.gbl",
+      "Path":  "MM32-Bottom.gbl",
       "FileFunction":  "Copper,L4,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "TeensyMM-F_SilkS.gto",
+      "Path":  "MM32-F_SilkS.gto",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "TeensyMM-B_SilkS.gbo",
+      "Path":  "MM32-B_SilkS.gbo",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "TeensyMM-F_Mask.gts",
+      "Path":  "MM32-F_Mask.gts",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "TeensyMM-B_Mask.gbs",
+      "Path":  "MM32-B_Mask.gbs",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "TeensyMM-Edge_Cuts.gm1",
+      "Path":  "MM32-Edge_Cuts.gm1",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }

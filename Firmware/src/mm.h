@@ -15,15 +15,17 @@ namespace MM32
     constexpr uint8_t G8  = 27;
     constexpr uint8_t G11 = 28;
 
-    struct MMbus
+    class BUS
     {
-        void pinMode(int mode) const;
+     public:
         void operator=(uint8_t value) const;
         operator uint8_t() const;
+
+     protected:
+        void pinMode(int mode) const;
+        friend void pinMode(const BUS&, int);
     };
-
-
-    extern MMbus Bus;
+    void pinMode(const MM32::BUS&, int mode);
 
     // ADC ---------------------------------------
     constexpr uint8_t A0     = ::A13;
@@ -61,12 +63,9 @@ namespace MM32
     // CAN --------------------------------------
     constexpr uint8_t CAN_TX = 3;
     constexpr uint8_t CAN_RX = 4;
+}
 
 // LED --------------------------------------
 #undef LED_BUILTIN
-    constexpr uint8_t LED_BUILTIN = 13;
-    //constexpr uint8_t LED_BUILTIN = 23;
-
-
-
-} // namespace MM32
+constexpr uint8_t LED_BUILTIN = 13;
+//constexpr uint8_t LED_BUILTIN = 23;

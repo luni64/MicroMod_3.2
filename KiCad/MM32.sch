@@ -100,7 +100,7 @@ Connection ~ 9425 1700
 Wire Wire Line
 	9425 1700 9425 1750
 $Comp
-L TeensyMM-rescue:MK20DX256VLH7-TeensyDIY U1
+L TeensyDIY:MK20DX256VLH7 U1
 U 1 1 5FD41634
 P 8175 3650
 F 0 "U1" H 8225 6017 50  0000 C CNN
@@ -111,7 +111,7 @@ F 3 "" H 8175 3650 50  0001 L BNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TeensyMM-rescue:TeensyBootloader_MKL02Z32VFG4-TeensyDIY U2
+L TeensyDIY:TeensyBootloader_MKL02Z32VFG4 U2
 U 1 1 5FD47E0F
 P 13075 4600
 F 0 "U2" H 13693 4646 50  0000 L CNN
