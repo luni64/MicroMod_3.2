@@ -1,10 +1,11 @@
 
 <img src="Documentation/3d_top.jpg" alt="3d top" height="250" > <img src="Documentation/3d_bottom.jpg" alt="3d bottom" height="250" >
 
-# MM3.2
+# MM32
 Experimental NXP MK20dx256 controller board compatible to the Sparkfun MicroMod
 carriers. The board should be able to run firmware written for a Teensy 3.2
-using the TeensyDuino core libraries (currently under development)
+using the TeensyDuino core libraries (currently under development). 
+Please note that you need to buy the MKL02 [directly from PJRC](https://www.pjrc.com/store/ic_mkl02.html) since it contains the bootloader needed to run the board. 
 ## Key features:
 - Contiguous **8bit port** routed to BUS0-BUS7 (PTD0 - PTD7)
 - **Two differential ADCs** mapped onto A0/A1 and ADC_D+ ADC_D-
