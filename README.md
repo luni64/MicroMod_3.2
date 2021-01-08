@@ -36,10 +36,9 @@ containing live updated prices and availability from major distributors. It also
 Schematic, pictures, pinouts and datasheets can be found in the documentation folder.
 
 ### Assembly
-If you have experience in soldering SMD parts the assembly is straight forward. You don't need any special equipment. A standard 50W soldering iron (I use [this](https://www.weller-tools.com/professional/EUR/en/Professional/Soldering+technology/Soldering+irons/Low-voltage+soldering+irons/Magnastat/TCP+24+) ) a magnifying glass (e.g. https://www.aliexpress.com/i/4000270805536.html) and a head worn loupe glasses (e.g.  https://www.flume.de/images/product/107683-brillenlupe-mit-3-vergroesserungen/popup/0.jpg) are absolutely sufficient.
+If you have experience in soldering SMD parts the assembly is straight forward. You don't need any special equipment. A standard 50W soldering iron (I use [that one](https://www.weller-tools.com/professional/EUR/en/Professional/Soldering+technology/Soldering+irons/Low-voltage+soldering+irons/Magnastat/TCP+24+) ) a magnifying glass (something like [this]( https://www.aliexpress.com/i/4000270805536.html)) and cheap head worn loupe glasses (e.g. [those](https://www.amazon.com/AORAEM-Magnifier-Glasses-Light-Extensions/dp/B01AJOD03A/ref=pd_vtp_194_1/145-9533834-3577657?_encoding=UTF8&pd_rd_i=B01AJOD03A&pd_rd_r=63fb740a-9b8e-4cf2-9c06-6a06746b77a2&pd_rd_w=vxmCN&pd_rd_wg=adZVj&pf_rd_p=4f2ab3e8-468a-4a7c-9b91-89d6a9221c29&pf_rd_r=BTKH33K3SHZ2QSCJZ0XT&psc=1&refRID=BTKH33K3SHZ2QSCJZ0XT)) are absolutely sufficient. Don't use a pinpoint soldering tip. You need something to transport heat quickly which is best done by a relatively large tip as shown in the video below. 
 
-
-The only part I found difficult is  the small bootloader chip (QFN16). The pads on the board are sufficiently long solder the chip by hand in principle. However, it is crucial to align the chip very carefully. Start with one pin and control and align the chip until it fits. It is helpful to apply some flux paste below the chip since this will help keeping it in place during the alignment. Alternatively you can solder it with a hot air gun.
+The only part I found a bit difficult to solder is the small bootloader chip (QFN16). The pads on the board are sufficiently long to solder the chip by hand in principle. However, it is a bit tedious to precisely align the chip to the pads. Start with soldering one pin, then control position and align the chip until it fits. It is helpful to apply some flux paste below the chip which will keep it in place during the alignment. Alternatively you can solder it with a hot air gun.
 
 The rest of the parts are small but easy to solder.
 
@@ -48,11 +47,19 @@ Here a video showing the assembly:
 [![MM32Assembly](https://img.youtube.com/vi/CCVqATbAmtM/0.jpg)](https://www.youtube.com/watch?v=CCVqATbAmtM)
 
 
-
-
 ## Firmware
-
 
 The [firmware folder](/Firmware) contains a header defining the
 MicroMod <-> Teensyduino pin mappings and a helper class to access the
 8bit BUS.
+
+## Debug configuration
+
+You can disable the bootloader by grounding its reset pin. To do so you
+need to close the solder bridge on the bottom of the board as shown here:
+
+<img src="Documentation/debugConfig.png" alt="3d top" height="250">
+
+You can then connect a debug probe (e.g. a JLink-Mini EDU) to the debug
+header on the carrier board.
+
