@@ -5,6 +5,9 @@
 Experimental NXP MK20DX256 controller board compatible to the SparkFun MicroMod (https://www.sparkfun.com/micromod) system and the [PJRC Teensyduino](https://www.pjrc.com/teensy/teensyduino.html) ecosystem. I.e., the board fits on the SparkFun MicroMod carriers and is able to run firmware written for a Teensy 3.2.
 
 The MM32 board utilizes the un-brickable PJRC bootloader, preprogrammed on the MKL02 chip. Please note: You need to buy the bootloader directly from PJRC (https://www.pjrc.com/store/ic_mkl02.html). It won't work with an empty MKL02.
+
+See here https://github.com/luni64/mmStep for a compatible MicroMode stepper driver board.
+
 ## Key features:
 - Contiguous **8bit port** routed to BUS0-BUS7 (Teensy: PTD0 - PTD7)
 - **Two differential ADCs** mapped onto A0/A1 and ADC_D+ ADC_D-
@@ -17,6 +20,8 @@ supported
 - SWD_DIO, SWD_CKL, **debug interface** (bootloader chip can be disabled with a solder bridge on the back side)
 - LED pin selectable (solder bridge) between D13 and D23
 - Layout optimized for hand soldering
+
+
 
 ## Functional Pinout
 
